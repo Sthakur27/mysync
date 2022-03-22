@@ -9,68 +9,111 @@ appTemplate:
             type: widget
             subtype: TextWidget2
             template:
-              heightType: auto
-              horizontalAlign: right
-              hidden: false
-              imageWidth: fit
-              verticalAlign: center
-              tooltipText: ''
-              value: '#### 👋 Welcome, {{current_user.firstName || ''friend''}}'
-              disableMarkdown: false
-              overflowType: scroll
+              ordered:
+                - heightType: auto
+                - horizontalAlign: right
+                - hidden: false
+                - imageWidth: fit
+                - showInEditor: false
+                - verticalAlign: center
+                - _defaultValue: ''
+                - tooltipText: ''
+                - value: '#### 👋 Welcome, {{current_user.firstName || ''friend''}}'
+                - style:
+                    ordered: []
+                - disableMarkdown: false
+                - overflowType: scroll
+                - maintainSpaceWhenHidden: false
+            style:
+              ordered: []
             position2:
               position2:
                 subcontainer: header
                 col: 9
                 height: 0.6
                 width: 3
+            createdAt: 2022-03-22T21:28:35.113Z
       - navigation:
           pluginTemplate:
             id: navigation
             type: widget
             subtype: NavigationWidget
             template:
-              horizontalAlign: left
-              menuItems:
-                - title: Learn more
-                  hidden: ''
-                  buttonType: action
-                  clickable:
-                    map:
-                      buttonType: url
-                  menuItems:
-                    - title: Working with components
-                      clickable:
-                        buttonType: url
-                        url: https://docs.retool.com/docs/understanding-components
-                        newWindow: true
-                    - title: Reading and writing data
-                      clickable:
-                        buttonType: url
-                        url: https://docs.retool.com/docs/queries
-                        newWindow: true
-                    - title: Retool docs
-                      clickable:
-                        buttonType: url
-                        url: https://docs.retool.com/
-                        newWindow: true
-                - title: Community
-                  hidden: ''
-                  clickable:
-                    buttonType: url
-                    url: https://community.retool.com/
-                    newWindow: true
-                - title: What's new
-                  hidden: ''
-                  clickable:
-                    buttonType: url
-                    url: https://updates.retool.com/en
-                    newWindow: true
+              ordered:
+                - horizontalAlign: left
+                - valueToCopy: ''
+                - menuItems:
+                    - ordered:
+                        - title: Learn more
+                        - hidden: ''
+                        - buttonType: action
+                        - clickable:
+                            ordered:
+                              - buttonType: url
+                        - menuItems:
+                            - ordered:
+                                - title: Working with components
+                                - clickable:
+                                    ordered:
+                                      - buttonType: url
+                                      - url: >-
+                                          https://docs.retool.com/docs/understanding-components
+                                      - newWindow: true
+                            - ordered:
+                                - title: Reading and writing data
+                                - clickable:
+                                    ordered:
+                                      - buttonType: url
+                                      - url: https://docs.retool.com/docs/queries
+                                      - newWindow: true
+                            - ordered:
+                                - title: Retool docs
+                                - clickable:
+                                    ordered:
+                                      - buttonType: url
+                                      - url: https://docs.retool.com/
+                                      - newWindow: true
+                    - ordered:
+                        - title: Community
+                        - hidden: ''
+                        - clickable:
+                            ordered:
+                              - buttonType: url
+                              - url: https://community.retool.com/
+                              - newWindow: true
+                    - ordered:
+                        - title: What's new
+                        - hidden: ''
+                        - clickable:
+                            ordered:
+                              - buttonType: url
+                              - url: https://updates.retool.com/en
+                              - newWindow: true
+                - srcFromUrl: true
+                - internalUrlHashParams: ''
+                - exportFileType: csv
+                - logoImageFile: ''
+                - buttonType: action
+                - exportTemplate: null
+                - url: ''
+                - newWindow: false
+                - style:
+                    ordered: []
+                - logoImageSrc: ''
+                - exportQuery: ''
+                - action: ''
+                - internalUrlQuery: ''
+                - internalUrlPath: ''
+                - exportFileName: ''
+                - disabled: ''
+            style:
+              ordered: []
             position2:
               position2:
                 subcontainer: header
                 height: 1
                 width: 9
+            createdAt: 2022-03-22T21:28:35.114Z
       - query1:
           pluginTemplate:
             id: query1
@@ -78,22 +121,84 @@ appTemplate:
             subtype: SqlQueryUnified
             resourceName: onboarding_db
             template:
-              queryRefreshTime: ''
-              queryDisabledMessage: ''
-              successMessage: ''
-              queryDisabled: ''
-              resourceNameOverride: ''
-              runWhenModelUpdates: true
-              query: select * from users limit 100
-              privateParams: []
-              data: null
-              showSuccessToaster: true
-              confirmationMessage: null
-              watchedParams: []
-              timestamp: 0
-              runWhenPageLoads: false
-              queryTimeout: '10001'
-              requireConfirmation: false
-              queryThrottleTime: '750'
+              ordered:
+                - queryRefreshTime: ''
+                - records: ''
+                - lastReceivedFromResourceAt: null
+                - databasePasswordOverride: ''
+                - queryDisabledMessage: ''
+                - successMessage: ''
+                - queryDisabled: ''
+                - playgroundQuerySaveId: latest
+                - resourceNameOverride: ''
+                - runWhenModelUpdates: true
+                - showFailureToaster: true
+                - query: select * from users limit 100
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: null
+                - privateParams: []
+                - runWhenPageLoadsDelay: ''
+                - data: null
+                - recordId: ''
+                - importedQueryInputs:
+                    ordered: []
+                - isImported: false
+                - showSuccessToaster: true
+                - dataArray: []
+                - cacheKeyTtl: ''
+                - filterBy: ''
+                - databaseHostOverride: ''
+                - metadata: null
+                - editorMode: sql
+                - actionType: ''
+                - triggersOnFailure: null
+                - changesetObject: ''
+                - shouldUseLegacySql: false
+                - errorTransformer: >-
+                    // The variable 'data' allows you to reference the request's
+                    data in the transformer. 
+
+                    // example: return data.find(element => element.isError)
+
+                    return data.error
+                - databaseNameOverride: ''
+                - confirmationMessage: null
+                - isFetching: false
+                - changeset: ''
+                - rawData: null
+                - queryTriggerDelay: '0'
+                - watchedParams: []
+                - enableErrorTransformer: false
+                - enableBulkUpdates: false
+                - showLatestVersionUpdatedWarning: false
+                - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - showUpdateSetValueDynamicallyToggle: true
+                - bulkUpdatePrimaryKey: ''
+                - runWhenPageLoads: false
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - events: []
+                - tableName: ''
+                - queryTimeout: '10001'
+                - requireConfirmation: false
+                - queryFailureConditions: ''
+                - changesetIsObject: false
+                - enableCaching: false
+                - allowedGroups: []
+                - databaseUsernameOverride: ''
+                - shouldEnableBatchQuerying: false
+                - doNotThrowOnNoOp: false
+                - queryThrottleTime: '750'
+                - updateSetValueDynamically: false
+                - notificationDuration: ''
+            createdAt: 2022-03-22T21:28:35.114Z
   rootScreen: null
-  version: ''
+  version: 2.88.3
