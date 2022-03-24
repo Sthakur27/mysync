@@ -12,33 +12,85 @@ appTemplate:
             template:
               ordered:
                 - queryRefreshTime: ''
+                - lastReceivedFromResourceAt: null
                 - queryDisabledMessage: ''
                 - successMessage: ''
                 - queryDisabled: ''
+                - useSheetRange: true
+                - playgroundQuerySaveId: latest
                 - resourceNameOverride: ''
                 - useRawSpreadsheetId: true
                 - runWhenModelUpdates: true
+                - showFailureToaster: true
                 - spreadsheetId: 1jQKcJQRgjBNzr2ZlKHJOGzv7HwSHJZOiYV0wQ9sx2EI
+                - query: ''
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: null
                 - sheetUpdate: ''
                 - privateParams: []
                 - triggersOnSuccess: []
                 - sheetIdToCopy: ''
+                - sheetName: ''
+                - runWhenPageLoadsDelay: ''
+                - doNotThrowOnDeleteNoOp: false
                 - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - isImported: false
                 - showSuccessToaster: true
+                - cacheKeyTtl: ''
+                - filterBy: ''
+                - metadata: null
                 - actionType: read
                 - triggersOnFailure: []
+                - changesetObject: ''
+                - errorTransformer: >-
+                    // The variable 'data' allows you to reference the request's
+                    data in the transformer. 
+
+                    // example: return data.find(element => element.isError)
+
+                    return data.error
                 - confirmationMessage: null
                 - isFetching: false
+                - changeset: ''
+                - rawData: null
+                - offset: ''
+                - queryTriggerDelay: '0'
                 - watchedParams: []
+                - bulkUpdateRows: ''
+                - enableErrorTransformer: false
+                - showLatestVersionUpdatedWarning: false
                 - useRawCopyToSpreadsheetId: false
                 - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - valueFormatting: formatted
+                - showUpdateSetValueDynamicallyToggle: true
                 - copyToSpreadsheetId: ''
+                - bulkUpdatePrimaryKey: ''
                 - runWhenPageLoads: false
                 - sheetTitle: ''
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - events: []
                 - queryTimeout: '10000'
                 - requireConfirmation: false
+                - queryFailureConditions: ''
+                - changesetIsObject: false
+                - limit: ''
+                - enableCaching: false
+                - allowedGroups: []
                 - sheetRange: A3:Z
                 - queryThrottleTime: '750'
+                - updateSetValueDynamically: false
+                - notificationDuration: ''
             createdAt: 2018-09-17T20:07:05.926Z
       - companiesTable:
           pluginTemplate:
@@ -49,7 +101,15 @@ appTemplate:
             template:
               ordered:
                 - actionButtonQuery: ''
+                - showCustomButton: false
+                - sortMappedValue:
+                    ordered: []
+                - _filteredSortedRenderedDataWithTypes: null
+                - normalizedData: null
                 - actionButtonType: runQuery
+                - saveChangesDisabled: ''
+                - columnTypeProperties:
+                    ordered: []
                 - columnWidths:
                     - ordered:
                         - id: Title
@@ -58,7 +118,12 @@ appTemplate:
                         - id: Sales
                         - value: 80
                 - actionButtonDisabled: ''
+                - disableRowSelectInteraction: false
                 - columnWidthsMobile: []
+                - hasNextAfterCursor: ''
+                - columnTypeSpecificExtras:
+                    ordered: []
+                - onRowAdded: ''
                 - columnHeaderNames:
                     ordered: []
                 - alwaysShowPaginator: false
@@ -86,12 +151,23 @@ appTemplate:
                       - email: ''
                       - Description: green
                       - category: ''
+                - columnFrozenAlignments:
+                    ordered: []
                 - allowMultiRowSelect: false
                 - columnFormats:
                     ordered: []
+                - columnRestrictedEditing:
+                    ordered: []
+                - showFilterButton: true
                 - actionButtonUrl: ''
                 - actionButton: false
+                - _columnSummaryTypes:
+                    ordered: []
                 - actionButtonNewWindow: false
+                - _columnsWithLegacyBackgroundColor:
+                    set: []
+                - showAddRowButton: false
+                - nextBeforeCursor: ''
                 - columnVisibility:
                     ordered:
                       - address_id: true
@@ -117,27 +193,83 @@ appTemplate:
                       - Description: true
                       - category: true
                 - selectedPageIndex: '0'
+                - rowColor:
+                    array: []
+                - actionButtonColumnName: Actions
+                - filterStackType: and
+                - downloadRawData: true
+                - showFetchingIndicator: true
                 - serverPaginated: false
                 - data: '{{ filteredCompanies.data }}'
+                - displayedData: null
+                - actionButtons: []
+                - actionButtonSelectsRow: true
                 - selectRowByDefault: true
                 - defaultSortByColumn: ''
                 - paginationOffset: 0
+                - columnAlignment:
+                    ordered: []
+                - columnSummaries:
+                    object: {}
                 - sortedDesc: false
+                - customButtonName: ''
                 - columnMappersRenderAsHTML:
                     ordered: []
                 - actionButtonInternalUrlPath: ''
+                - showRefreshButton: true
                 - pageSize: 8
+                - useDynamicColumnSettings: false
+                - style:
+                    ordered: []
                 - selectedColumn: null
+                - actionButtonPosition: left
+                - dynamicRowHeights: false
+                - bulkUpdateAction: ''
+                - afterCursor: ''
+                - onCustomButtonPressQueryName: ''
+                - changeSet:
+                    object: {}
                 - sortedColumn: ''
+                - _columnSummaryValues:
+                    ordered: []
+                - checkboxRowSelect: false
+                - _compatibilityMode: true
+                - showColumnBorders: true
+                - _renderedDataWithTypes: null
                 - actionButtonText: ''
                 - columnAllowOverflow:
                     ordered: []
+                - beforeCursor: ''
+                - serverPaginationType: limitOffsetBased
                 - onRowSelect: ''
+                - showDownloadButton: true
                 - selectedIndex: ''
+                - defaultSortDescending: false
+                - _sortedDisplayedDataIndices: null
+                - dynamicColumnSettings: null
                 - totalRowCount: ''
+                - recordUpdates:
+                    array: []
+                - newRow: null
+                - emptyMessage: No rows found
+                - columnEditable:
+                    ordered: []
+                - filters:
+                    array: []
+                - displayedDataIndices: null
+                - disableSorting:
+                    ordered: []
                 - columnMappers:
                     ordered: []
                 - showClearSelection: false
+                - doubleClickToEdit: false
+                - overflowType: pagination
+                - _reverseSortedDisplayedDataIndices: null
+                - selectedCell:
+                    object:
+                      index: null
+                      data: null
+                      columnName: null
                 - columns:
                     - Title
                     - Sales
@@ -161,12 +293,23 @@ appTemplate:
                     - updated_at
                     - image_url
                     - category
+                - defaultSelectedRow: first
+                - freezeActionButtonColumns: false
                 - sort: null
                 - actionButtonInternalUrlQuery: ''
+                - sortByRawValue:
+                    ordered: []
+                - calculatedColumns: []
                 - selectedRow:
                     object:
                       index: null
                       data: null
+                - showPaginationOnTop: false
+                - _reverseDisplayedDataIndices: null
+                - nextAfterCursor: ''
+                - useCompactMode: false
+            style:
+              ordered: []
             position2:
               position2:
                 row: 3
@@ -186,19 +329,46 @@ appTemplate:
             resourceName: null
             template:
               ordered:
+                - validationMaxlengthValue: ''
                 - readonly: 'true'
                 - disabledKeyCodes: ''
+                - showNumberCommas: false
+                - validationMaxValue: ''
+                - onBlur: ''
                 - docsSlug: textinput
+                - validatonType: ''
+                - currencyType: USD
                 - leftIconName: mail
                 - initialValue: '{{  companiesTable.selectedRow.data.email  }}'
+                - validationMessage: ''
+                - tooltipText: ''
                 - value: ''
+                - style:
+                    ordered: []
+                - suffix: ''
+                - validationMinlengthValue: ''
+                - validationLengthValue: ''
                 - placeholder: Send to...
+                - validationType: regexp
                 - label: 'To:'
+                - currencyMajorOnly: false
+                - formattedValue: ''
+                - allowedInputsRegex: ''
                 - labelMaxWidth: ''
+                - enableValidationType: false
+                - labelPlacedOnLeft: false
                 - onSubmit: ''
+                - validationMinValue: ''
+                - lastSubmittedAt: ''
+                - validationState:
+                    object:
+                      required: ''
+                      validationType: ''
                 - type: text
-                - allowedRegex: .*
+                - allowedRegex: ''
                 - required: ''
+            style:
+              ordered: []
             position2:
               position2:
                 row: 1
@@ -219,19 +389,46 @@ appTemplate:
             resourceName: null
             template:
               ordered:
+                - validationMaxlengthValue: ''
                 - readonly: ''
                 - disabledKeyCodes: ''
+                - showNumberCommas: false
+                - validationMaxValue: ''
+                - onBlur: ''
                 - docsSlug: textinput
+                - validatonType: ''
+                - currencyType: USD
                 - leftIconName: mail
                 - initialValue: ''
+                - validationMessage: ''
+                - tooltipText: ''
                 - value: ''
+                - style:
+                    ordered: []
+                - suffix: ''
+                - validationMinlengthValue: ''
+                - validationLengthValue: ''
                 - placeholder: BCC'd emails (maybe your email?)
+                - validationType: regexp
                 - label: 'BCC (optional):'
+                - currencyMajorOnly: false
+                - formattedValue: ''
+                - allowedInputsRegex: ''
                 - labelMaxWidth: ''
+                - enableValidationType: false
+                - labelPlacedOnLeft: false
                 - onSubmit: ''
+                - validationMinValue: ''
+                - lastSubmittedAt: ''
+                - validationState:
+                    object:
+                      required: ''
+                      validationType: ''
                 - type: text
-                - allowedRegex: .*
+                - allowedRegex: ''
                 - required: ''
+            style:
+              ordered: []
             position2:
               position2:
                 row: 3
@@ -252,19 +449,46 @@ appTemplate:
             resourceName: null
             template:
               ordered:
+                - validationMaxlengthValue: ''
                 - readonly: ''
                 - disabledKeyCodes: ''
+                - showNumberCommas: false
+                - validationMaxValue: ''
+                - onBlur: ''
                 - docsSlug: textinput
+                - validatonType: ''
+                - currencyType: USD
                 - leftIconName: search
                 - initialValue: ''
+                - validationMessage: ''
+                - tooltipText: ''
                 - value: ''
+                - style:
+                    ordered: []
+                - suffix: ''
+                - validationMinlengthValue: ''
+                - validationLengthValue: ''
                 - placeholder: I was excited by the potential your company has!
+                - validationType: regexp
                 - label: Personalized snippet
+                - currencyMajorOnly: false
+                - formattedValue: ''
+                - allowedInputsRegex: ''
                 - labelMaxWidth: ''
+                - enableValidationType: false
+                - labelPlacedOnLeft: false
                 - onSubmit: ''
+                - validationMinValue: ''
+                - lastSubmittedAt: ''
+                - validationState:
+                    object:
+                      required: ''
+                      validationType: ''
                 - type: text
-                - allowedRegex: .*
+                - allowedRegex: ''
                 - required: ''
+            style:
+              ordered: []
             position2:
               position2:
                 row: 5
@@ -285,20 +509,35 @@ appTemplate:
             resourceName: null
             template:
               ordered:
-                - color: ''
+                - valueToCopy: ''
+                - color: '#3c92dc'
+                - internalUrlHashParams: ''
                 - exportFileType: csv
                 - buttonType: action
                 - exportTemplate: null
                 - url: ''
                 - newWindow: false
                 - value: Send Email
+                - style:
+                    ordered:
+                      - accent-background: ''
                 - exportQuery: ''
                 - action: sendEmail
                 - internalUrlQuery: ''
                 - internalUrlPath: ''
+                - events:
+                    - event: click
+                      method: trigger
+                      type: datasource
+                      pluginId: sendEmail
+                      waitType: debounce
+                      waitMs: '0'
                 - exportFileName: ''
                 - loading: ''
                 - disabled: ''
+            style:
+              ordered:
+                - accent-background: ''
             position2:
               position2:
                 row: 12
@@ -319,6 +558,11 @@ appTemplate:
             resourceName: null
             template:
               ordered:
+                - horizontalAlign: left
+                - truncateOverflow: false
+                - verticalAlign: center
+                - scrollOverflow: false
+                - tooltipText: ''
                 - value: >-
                     <center><h3 style="line-height:25px">Demo day
                     companies</h3></center>
@@ -331,9 +575,12 @@ appTemplate:
                         min-width: 0 !important;
                       }
                     </style>
-                - html: true
-                - scrollOverflow: false
-                - truncateOverflow: false
+                - style:
+                    ordered: []
+                - renderAsHtml: true
+                - renderAsMarkdown: false
+            style:
+              ordered: []
             position2:
               position2:
                 height: 1
@@ -351,9 +598,15 @@ appTemplate:
             resourceName: null
             template:
               ordered:
+                - validationMaxlengthValue: ''
                 - readonly: 'true'
                 - disabledKeyCodes: ''
+                - showNumberCommas: false
+                - validationMaxValue: ''
+                - onBlur: ''
                 - docsSlug: textinput
+                - validatonType: ''
+                - currencyType: USD
                 - leftIconName: search
                 - initialValue: >-
                     Hi founders at {{  companiesTable.selectedRow.data.name }},
@@ -364,14 +617,35 @@ appTemplate:
 
 
                     Thanks!
+                - validationMessage: ''
+                - tooltipText: ''
                 - value: ''
+                - style:
+                    ordered: []
+                - suffix: ''
+                - validationMinlengthValue: ''
+                - validationLengthValue: ''
                 - placeholder: Search here...
+                - validationType: regexp
                 - label: Email preview
+                - currencyMajorOnly: false
+                - formattedValue: ''
+                - allowedInputsRegex: ''
                 - labelMaxWidth: ''
+                - enableValidationType: false
+                - labelPlacedOnLeft: false
                 - onSubmit: ''
+                - validationMinValue: ''
+                - lastSubmittedAt: ''
+                - validationState:
+                    object:
+                      required: ''
+                      validationType: ''
                 - type: text
-                - allowedRegex: .*
+                - allowedRegex: ''
                 - required: ''
+            style:
+              ordered: []
             position2:
               position2:
                 row: 8
@@ -398,32 +672,74 @@ appTemplate:
                     [{"key":"to","value":"{{
                     companiesTable.selectedRow.data.email}}"},{"key":"bcc","value":"{{bccInput.value}}"},{"key":"snippet","value":"{{personalizedInput.value}}"},{"key":"company_name","value":"{{
                     companiesTable.selectedRow.data.name }}"}]
+                - lastReceivedFromResourceAt: null
                 - queryDisabledMessage: Please enter in a personalized snippet!
                 - successMessage: ''
                 - queryDisabled: '{{ !personalizedInput.value}}'
+                - playgroundQuerySaveId: latest
                 - resourceNameOverride: ''
                 - runWhenModelUpdates: false
                 - paginationPaginationField: ''
                 - headers: ''
+                - showFailureToaster: true
                 - paginationEnabled: false
                 - query: emails/new
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: null
                 - privateParams: []
                 - triggersOnSuccess: []
+                - runWhenPageLoadsDelay: ''
                 - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - isImported: false
                 - showSuccessToaster: true
+                - cacheKeyTtl: ''
                 - cookies: ''
+                - metadata: null
                 - triggersOnFailure: []
+                - changesetObject: ''
+                - errorTransformer: >-
+                    // The variable 'data' allows you to reference the request's
+                    data in the transformer. 
+
+                    // example: return data.find(element => element.isError)
+
+                    return data.error
                 - confirmationMessage: null
                 - isFetching: false
+                - changeset: ''
+                - rawData: null
+                - queryTriggerDelay: '0'
                 - watchedParams: []
+                - enableErrorTransformer: false
+                - showLatestVersionUpdatedWarning: false
                 - paginationDataField: ''
                 - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - showUpdateSetValueDynamicallyToggle: true
                 - runWhenPageLoads: false
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - events: []
                 - queryTimeout: '10000'
                 - requireConfirmation: false
                 - type: POST
+                - queryFailureConditions: ''
+                - changesetIsObject: false
+                - enableCaching: false
+                - allowedGroups: []
                 - bodyType: json
                 - queryThrottleTime: '750'
+                - updateSetValueDynamically: false
+                - notificationDuration: ''
             createdAt: 2018-09-19T05:51:17.389Z
       - multiselect1:
           pluginTemplate:
@@ -433,16 +749,36 @@ appTemplate:
             resourceName: null
             template:
               ordered:
-                - label: Filter by category
-                - labelMaxWidth: ''
-                - value: ''
-                - displayValue: ''
-                - placeholder: ''
+                - enableClientSideMatching: true
                 - values: '  {{ companiesQuery.data.map(function(d) { return d.category })}}'
+                - allowOutOfRangeValues: false
+                - enableFuzzyMatching: true
+                - searchValue: ''
+                - showFetchingIndicator: true
+                - enableCaseSensitivity: false
+                - validationMessage: ''
+                - displayValue: ''
+                - tooltipText: ''
+                - value: ''
+                - style:
+                    ordered: []
+                - maxResults: 50
+                - placeholder: ''
+                - label: Filter by category
+                - clearValueOnFocus: true
+                - labelMaxWidth: ''
+                - labelPlacedOnLeft: false
+                - validationState: ''
+                - onSelect: ''
+                - allowCustomValues: false
+                - disabled: ''
+                - hideClearButton: false
+                - required: false
                 - labels: >-
                     {{ companiesQuery.data.map(function(d) { return d.category
                     })}}
-                - disabled: ''
+            style:
+              ordered: []
             position2:
               position2:
                 row: 1
@@ -463,27 +799,70 @@ appTemplate:
             template:
               ordered:
                 - queryRefreshTime: ''
+                - lastReceivedFromResourceAt: null
                 - queryDisabledMessage: ''
                 - successMessage: ''
                 - queryDisabled: ''
+                - playgroundQuerySaveId: latest
                 - resourceNameOverride: ''
                 - runWhenModelUpdates: true
+                - showFailureToaster: true
                 - query: >-
                     select * from {{ companiesQuery.data }} where {{
                     multiselect1.value.length == 0}} or category = ANY ({{
                     multiselect1.value}}) order by category
+                - playgroundQueryUuid: ''
+                - playgroundQueryId: null
                 - privateParams: []
                 - triggersOnSuccess: []
+                - runWhenPageLoadsDelay: ''
                 - data: null
+                - importedQueryInputs:
+                    ordered: []
+                - isImported: false
                 - showSuccessToaster: true
+                - cacheKeyTtl: ''
+                - metadata: null
                 - triggersOnFailure: []
+                - changesetObject: ''
+                - errorTransformer: >-
+                    // The variable 'data' allows you to reference the request's
+                    data in the transformer. 
+
+                    // example: return data.find(element => element.isError)
+
+                    return data.error
                 - confirmationMessage: null
                 - isFetching: false
+                - changeset: ''
+                - rawData: null
+                - queryTriggerDelay: '0'
                 - watchedParams: []
+                - enableErrorTransformer: false
+                - showLatestVersionUpdatedWarning: false
                 - timestamp: 0
+                - importedQueryDefaults:
+                    ordered: []
+                - enableTransformer: false
+                - showUpdateSetValueDynamicallyToggle: true
                 - runWhenPageLoads: false
+                - transformer: >-
+                    // type your code here
+
+                    // example: return formatDataAsArray(data).filter(row =>
+                    row.quantity > 20)
+
+                    return data
+                - events: []
                 - queryTimeout: '10000'
                 - requireConfirmation: false
+                - queryFailureConditions: ''
+                - changesetIsObject: false
+                - enableCaching: false
+                - allowedGroups: []
                 - queryThrottleTime: '750'
+                - updateSetValueDynamically: false
+                - notificationDuration: ''
             createdAt: 2018-09-20T08:08:33.866Z
-  version: 2.29.11
+  rootScreen: null
+  version: 2.88.3
