@@ -137,7 +137,9 @@ appTemplate:
                       - name: ''
                       - Sales: orange
                       - sales: ''
+                      - '0': ''
                       - activebool: ''
+                      - '1': ''
                       - create_date: ''
                       - last_update: ''
                       - last_name: ''
@@ -178,7 +180,9 @@ appTemplate:
                       - name: true
                       - Sales: true
                       - sales: true
+                      - '0': true
                       - activebool: true
+                      - '1': true
                       - create_date: true
                       - last_update: true
                       - last_name: true
@@ -293,6 +297,8 @@ appTemplate:
                     - updated_at
                     - image_url
                     - category
+                    - '0'
+                    - '1'
                 - defaultSelectedRow: first
                 - freezeActionButtonColumns: false
                 - sort: null
@@ -410,7 +416,7 @@ appTemplate:
                 - validationLengthValue: ''
                 - placeholder: BCC'd emails (maybe your email?)
                 - validationType: regexp
-                - label: 'BCC (optional):'
+                - label: 'BCC (opti0nal):'
                 - currencyMajorOnly: false
                 - formattedValue: ''
                 - allowedInputsRegex: ''
